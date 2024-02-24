@@ -1,9 +1,12 @@
+.border-red {
+  border: 1px solid red;
+}
+
 .header {
   background: #151515 url(../images/intro-bg.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
-
 .header::after {
   content: "";
   position: absolute;
@@ -13,24 +16,21 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
 }
-
-.header .text-container {
+.header-text-container {
   z-index: 10;
 }
-
-.header .roles {
+.header-skills {
   font-family: "Lora", serif;
 }
-
-.header .social-icons {
+.header-social-icons {
   bottom: 50px;
 }
 
 @media (max-width: 767px) {
-  .header .social i {
+  .header-social-icons i {
     font-size: 30px;
   }
-  .header .roles {
+  .header .skills {
     font-size: 18px !important;
   }
 }

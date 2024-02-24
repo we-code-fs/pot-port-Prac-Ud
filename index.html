@@ -20,14 +20,14 @@
     <!-- header -->
     <header class="header vh-100 text-center position-relative">
       <div
-        class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
+        class="header-text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
       >
         <h5 class="text-primary text-uppercase fw-bold">Hello World</h5>
         <!-- Author name -->
         <!-- Author name is script.js -->
         <h1 id="typing-text" class="fw-bold text-white"></h1>
         <!-- Role description -->
-        <p class="roles text-white text-uppercase fs-4">
+        <p class="header-skills text-white text-uppercase fs-4">
           <span>Full Stack Web Developer</span> | <span> Online Educator</span>
         </p>
         <!-- BUtton for more about author -->
@@ -40,25 +40,271 @@
           </div></a
         >
         <!-- Social Icons -->
-        <div class="social-icons d-flex gap-3 position-absolute">
-          <!-- twitter social icon -->
-          <a href="#"><i class="fab fa-twitter fa-3x text-white"></i></a>
-          <!-- Instagram social icon -->
-          <a href="#"><i class="fab fa-instagram fa-3x text-white"></i></a>
-          <!-- Linkedin social icon -->
-          <a href="#"><i class="fab fa-linkedin fa-3x text-white"></i></a>
-          <!-- facebook social icon -->
-          <a href="#"><i class="fab fa-facebook fa-3x text-white"></i></a>
-          <!-- YouTube social icon -->
-          <a href="#"><i class="fab fa-youtube fa-3x text-white"></i></a>
-          <!-- GitHub social icon -->
-          <a href="#"><i class="fab fa-github fa-3x text-white"></i></a>
+        <div class="header-social-icons position-absolute">
+          <div class="d-flex gap-3 mx-auto flex-wrap justify-content-center">
+            <div class="d-flex gap-3">
+              <!-- twitter social icon -->
+              <a href="#"><i class="fab fa-twitter fa-3x text-white"></i></a>
+              <!-- Instagram social icon -->
+              <a href="#"><i class="fab fa-instagram fa-3x text-white"></i></a>
+              <!-- Linkedin social icon -->
+              <a href="#"><i class="fab fa-linkedin fa-3x text-white"></i></a>
+            </div>
+            <div class="d-flex gap-3">
+              <!-- facebook social icon -->
+              <a href="#"><i class="fab fa-facebook fa-3x text-white"></i></a>
+              <!-- YouTube social icon -->
+              <a href="#"><i class="fab fa-youtube fa-3x text-white"></i></a>
+              <!-- GitHub social icon -->
+              <a href="#"><i class="fab fa-github fa-3x text-white"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
-    <div>Hello</div>
+
+    <!-- About Section -->
+    <section id="about" class="about bg-light py-5">
+      <div class="about-titles text-center">
+        <h4 class="text-uppercase fw-bold text-primary">About Me</h4>
+        <hr class="w-25 mx-auto" />
+        <h2 class="mb-4">Let me introduce myself</h2>
+      </div>
+
+      <div class="about-content d-flex gap-5 align-items-center h-100">
+        <div class="container p-0">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6">
+                  <div class="about-img w-50 m-auto mb-4 w-75">
+                    <img
+                      src="./images/brad.jpg"
+                      alt=""
+                      class="img-fluid rounded-circle"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-text">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Expedita, quaerat, sequi eveniet deleniti repudiandae odit
+                      mollitia ipsam voluptate impedit similique inventore
+                      perferendis voluptates recusandae consequatur alias
+                      laborum! Veritatis, quo, sed voluptatibus, magnam
+                      voluptates sit odio perferendis illo vitae aut ab.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile & Skills Section -->
+    <section class="profile my-6">
+      <div class="container">
+        <div class="row">
+          <!-- Personal Info -->
+          <div class="col-md-6">
+            <h3 class="text-uppercase fw-bold">Profile</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              corrupti consequatur repudiandae enim, architecto beatae numquam
+              molestiae, provident ipsam aliquam est cumque animi. Ipsa magni
+              voluptatum eum, quisquam vitae alias.
+            </p>
+            <ul class="list-group list-group-flushed">
+              <!-- Full Name -->
+              <li class="list-group-item mb-3">
+                <h5 class="text-tranform">
+                  <i class="fas fa-user text-primary me-2"></i> Full Name:
+                </h5>
+                <p>firstName lastName</p>
+              </li>
+              <!-- Birth Date -->
+              <li class="list-group-item mb-3">
+                <h5 class="text-tranform">
+                  <i class="fas fa-calendar text-primary me-2"></i>Birth Date:
+                </h5>
+                <p>Month day, Year</p>
+              </li>
+              <!-- Current Position -->
+              <li class="list-group-item mb-3">
+                <h5 class="text-tranform">
+                  <i class="fas fa-building text-primary me-2"></i>Current
+                  Positon:
+                </h5>
+                <p>current position</p>
+              </li>
+              <!-- Website -->
+              <li class="list-group-item mb-3">
+                <h5 class="text-tranform">
+                  <i class="fas fa-home text-primary me-2"></i>Website:
+                </h5>
+                <p>website@something.com</p>
+              </li>
+              <!-- Email -->
+              <li class="list-group-item mb-3">
+                <h5 class="text-tranform">
+                  <i class="fas fa-envelope text-primary me-2"></i>Email:
+                </h5>
+                <p>contact@email.com</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Skills -->
+          <div class="col-md-6">
+            <h3 class="text-uppercase fw-bold">Skills</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+              nostrum distinctio dolorum unde aspernatur impedit velit tempora
+              ea at quaerat!
+            </p>
+            <!-- HTML5 Skill -->
+            <h5><i class="fas fa-check me-2"></i>HTML 5</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 100%">100%</div>
+            </div>
+            <!-- CSS 3 Skill -->
+            <h5><i class="fas fa-check me-2"></i>CSS 3</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 90%">90%</div>
+            </div>
+            <!-- JavaScript Skill -->
+            <h5><i class="fas fa-check me-2"></i>JavaScript</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 90%">90%</div>
+            </div>
+            <!-- Bottstrap Skill -->
+            <h5><i class="fas fa-check me-2"></i>Bootstrap</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 100%">100%</div>
+            </div>
+            <!-- PHP Skill -->
+            <h5><i class="fas fa-check me-2"></i>PHP</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 75%">75%</div>
+            </div>
+            <!-- Python Skill -->
+            <h5><i class="fas fa-check me-2"></i>Python</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 70%">70%</div>
+            </div>
+            <!-- UI/UX Skill -->
+            <h5><i class="fas fa-check me-2"></i>UI/UX</h5>
+            <div
+              class="progress mb-4"
+              role="progressbar"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 70%">70%</div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 text-center">
+          <div class="col-12">
+            <a
+              href=""
+              class="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2"
+              >Hire Me Now</a
+            >
+            <a
+              href="#"
+              class="btn btn-lg btn-dark text-uppercase px-5 mx-3 my-2"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Porfolio Section -->
+    <section class="portfolio py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h4 class="text-uppercase fw-bold text-primary">Porfolio</h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">Check Out My Work</h2>
+          <p class="lead">hre is a small sample of my projects</p>
+          <!-- !Review Lightbox Images not working properly -->
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="project shadow-lg rounded-5">
+                <a
+                  href="./images/project1.jpg"
+                  data-lightbox="images"
+                  data-title="Project Name or Title"
+                  ><img
+                    src="./images/project1.jpg"
+                    alt=""
+                    class="img-fluid rounded-3"
+                /></a>
+              </div>
+            </div>
+            <!-- Project2 -->
+            <div class="col-md-6 mb-3">
+              <div class="project shadow-lg rounded-5">
+                <a
+                  href="images/project2.jpg"
+                  data-lightbox="images"
+                  data-title="Project Name or Title"
+                  ><img
+                    src="images/project2.jpg"
+                    alt=""
+                    class="img-fluid rounded-3"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- js Links -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
