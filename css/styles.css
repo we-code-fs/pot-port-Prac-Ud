@@ -26,11 +26,36 @@
   bottom: 50px;
 }
 
+.services {
+  background: url("../images/bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.services .container {
+  z-index: 10;
+}
+
 @media (max-width: 767px) {
   .header-social-icons i {
     font-size: 30px;
   }
   .header .skills {
     font-size: 18px !important;
+  }
+  .stats .stat {
+    border-right: 0 !important;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
   }
 }
